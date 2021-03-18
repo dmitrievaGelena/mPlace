@@ -1,0 +1,12 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::after{
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+}
