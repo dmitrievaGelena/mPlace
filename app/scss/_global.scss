@@ -6,7 +6,22 @@ html{
 *::after{
     box-sizing: inherit;
 }
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 body{
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
+    font-size: 15px;
+}
+.container{
+    max-width: 1175px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
