@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -43,7 +47,7 @@
                 <div class="header__search">
                     <form>
                         <input type="text" placeholder="Search product here...">
-                        <button type="submit"></button>
+                        <button class="lnr lnr-magnifier" type="submit"></button>
                     </form>
                 </div>
             </div>
@@ -81,11 +85,94 @@
         </div>
     </div>
 </section>
+<section class="advantages">
+    <div class="container">
+        <div class="advantages__inner">
+            <div class="advantages__item">
+                <div class="advantages__item-img">
+                    <img class="advantages__item-img" src="img/advantages/advant1.png" alt="">
+                </div>
+                <div class="advantages__item-title">Best UX Research</div>
+                <div class="advantages__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                    scelerisque
+                    the mattis, leo quam aliquet diam
+                    congue is laoreet elit metus.</div>
+            </div>
+            <div class="advantages__item">
+                <div class="advantages__item-img img-advantages">
+                    <img class="advantages__item-img" src="img/advantages/advant2.png" alt="">
+                </div>
+                <div class="advantages__item-title">Fully Responsive</div>
+                <div class="advantages__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                    scelerisque
+                    the mattis, leo quam aliquet diam
+                    congue is laoreet elit metus.</div>
+            </div>
+            <div class="advantages__item">
+                <div class="advantages__item-img">
+                    <img class="advantages__item-img" src="img/advantages/advant3.png" alt="">
+                </div>
+                <div class="advantages__item-title">Buy & Sell Easily</div>
+                <div class="advantages__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                    scelerisque
+                    the mattis, leo quam aliquet diam
+                    congue is laoreet elit metus.</div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="slider">
+    <div class="slider__inner">
+        <div class="container">
+            <div class="slider__content">
+                <div class="slider__box">
+                    <div class="slider__box-title">Weekly Featured Products</div>
+                </div>
+                <div class="slider__info">
+                    <div class="slider__item">
+                        <div class="slider__item-img" style="background-image: url(/img/content/bg-slider.jpg);"></div>
+                        <div class="slider__item-box">
+                            <div class="slider__item-title">One Page Resume Template</div>
+                            <div class="slider__item-profile">
+                                <div class="slider__item-user">
+                                    <div class="user-avatar" style="background-image: url();"></div>
+                                    <div class="user-name">AazzTech</div>
+                                </div>
+                                <div class="slider__item-program">
+                                    <img class="program-img" src="img/slider/wordpress.svg" alt="">
+                                    <div class="program-name">WordPress</div>
+                                </div>
+                            </div>
+                            <div class="slider__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                                justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum
+                                mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue
+                                justo ut scelerisque.</div>
+                            <div class="slider__item-tags">
+                                <button>website</button>
+                                <button>plugin</button>
+                                <button>landing page</button>
+                            </div>
+                            <div class="slider__item-rat">
+                                <div class="slider__item-icon">
+                                    <div class="slider__item-price">$10 - $50</div>
+                                    <div class="slider__item-favour lnr lnr-heart">46</div>
+                                    <div class="slider__item-buy lnr lnr-cart">634</div>
+                                </div>
+                                <div class="slider__item-rating" id="rateYo"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 <body>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
 </body>

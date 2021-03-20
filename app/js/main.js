@@ -1,5 +1,9 @@
 $(function() {
-
+    $("#rateYo").rateYo({
+        rating: 4.2,
+        starWidth: "15px",
+        readOnly: true
+      });
 });
 
 const btnView = document.querySelector('.btn-view'),

@@ -67,6 +67,12 @@
         }
     }
 
+    .lnr-magnifier {
+        &::before {
+            color: #fff;
+        }
+    }
+
     .header__box {
         .header__btn {
             padding: 13px 10px;
@@ -112,7 +118,7 @@
 
             &-info {
                 min-height: 720px;
-                padding: 100px 15px 0 15px;
+                padding-top: 100px;
                 text-align: center;
                 color: #fff;
                 position: relative;
@@ -121,12 +127,13 @@
             &-title {
                 margin-top: 70px;
                 font-size: 60px;
-                font-weight: 500;
+                font-weight: 700;
                 line-height: 70px;
                 margin-bottom: 35px;
 
                 span {
                     display: block;
+                    font-weight: 400;
                 }
             }
 
@@ -178,7 +185,6 @@
         background-color: #fff;
         height: 130px;
         width: 1140px;
-        margin: 0 15px;
         padding: 40px;
         border-radius: 5px;
         -webkit-border-radius: 5px;
@@ -279,10 +285,232 @@
         }
     }
 
-
-
-
-
-
-
     //end search
+
+    //start advantages
+    .advantages {
+        margin-bottom: 100px;
+
+        &__inner {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        &__item {
+            cursor: pointer;
+            text-align: center;
+            max-width: 365px;
+            width: 100%;
+            padding: 40px 30px 50px 30px;
+
+            &:hover {
+                box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+                transition: all .5s;
+                -webkit-transition: all .5s;
+                -moz-transition: all .5s;
+                -ms-transition: all .5s;
+                -o-transition: all .5s;
+            }
+
+            &-img {
+                margin-bottom: 20px;
+            }
+
+            &-title {
+                font-size: 24px;
+                font-weight: 600;
+                margin-bottom: 20px;
+                padding: 0 5px;
+            }
+
+            &-text {
+                font-size: 16px;
+                color: $text;
+                line-height: 30px;
+            }
+        }
+    }
+
+    .img-advantages {
+        margin-bottom: 11px;
+    }
+
+    //end advantages
+
+    //start slider
+    .slider {
+        &__inner {
+            padding: 118px 0;
+            background-color: $grey;
+        }
+    }
+
+    .slider__box {
+        width: 100%;
+        background-color: #fff;
+        height: 110px;
+        display: flex;
+        align-items: center;
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        margin-bottom: 50px;
+
+        &-title {
+            padding: 0 26px;
+            font-size: 30px;
+            font-weight: 500;
+        }
+    }
+
+    .slider__item-img {
+        border-radius: 5px 0 0 5px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 45%;
+        -webkit-border-radius: 5px 0 0 5px;
+        -moz-border-radius: 5px 0 0 5px;
+        -ms-border-radius: 5px 0 0 5px;
+        -o-border-radius: 5px 0 0 5px;
+    }
+
+    .slider__item {
+        display: flex;
+        width: 100%;
+        height: 450px;
+        background-color: #fff;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+
+        &-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        &-profile {
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        &-user {
+            display: flex;
+            align-items: center;
+        }
+
+        &-text {
+            color: $text;
+            font-size: 16px;
+            line-height: 30px;
+            margin-bottom: 35px;
+        }
+    }
+
+    .user-avatar {
+        width: 30px;
+        height: 30px;
+        background-color: purple;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+
+    .user-name {
+        margin: 0 13px 0 5px;
+        padding: 0 5px;
+        font-weight: 500;
+    }
+
+    .slider__item-program {
+        display: flex;
+    }
+
+    .program-name {
+        margin-left: 5px;
+        padding: 0 5px;
+        color: #7347c1;
+    }
+
+    .slider__item-box {
+        width: 55%;
+        padding: 40px 60px 20px 45px;
+    }
+
+    .slider__item-tags {
+        padding-bottom: 45px;
+        border-bottom: 1px solid #ececec;
+
+        button {
+            border: none;
+            padding: 7px 15px;
+            background-color: #f1f3f6;
+            text-align: center;
+            border-radius: 30px;
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            -ms-border-radius: 30px;
+            -o-border-radius: 30px;
+            color: #868c96;
+            cursor: pointer;
+
+            &+button {
+                margin-left: 5px;
+            }
+        }
+    }
+
+    .slider__item-rat {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .slider__item-icon {
+        display: flex;
+        align-items: center;
+    }
+
+    .slider__item-price {
+        padding: 8px 5px;
+        width: 98px;
+        background-color: $blue;
+        text-align: center;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        color: #fff;
+        font-weight: 500;
+        margin-right: 20px;
+    }
+
+    .lnr-heart {
+        color: $text;
+        margin-right: 20px;
+
+        &::before {
+            margin-right: 5px;
+            color: #7347c1;
+        }
+    }
+
+    .lnr-cart {
+        color: $blue;
+        &::before {
+            color: $blue;
+            margin-right: 5px;
+        }
+    }
+
+    //end slider
