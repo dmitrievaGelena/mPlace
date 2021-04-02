@@ -1,3 +1,8 @@
 $grey: #eff1f5;
 $blue: #0674ec;
 $text: #555555;
+
+@mixin greyText {
+    font-size: 16px;
+    color: $text;
+}
