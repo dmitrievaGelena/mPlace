@@ -8,6 +8,21 @@ html {
     box-sizing: inherit;
 }
 
+html, body{
+    height: 100%;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.content{
+    flex: 1 0 auto;
+}
+.footer{
+    flex: 0 0  auto;
+}
+
 a {
     display: inline-block;
     text-decoration: none;
@@ -31,6 +46,9 @@ body {
     max-width: 1175px;
     margin: 0 auto;
     padding: 0 15px;
+}
+.page-content{
+    background-color: #eff1f5;
 }
 
 .slider__box {
@@ -91,5 +109,34 @@ body {
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
     font-size: 16px;
+}
+
+.breadcrumbs{
+    &__inner{
+        padding-top: 30px;
+    }
+    &__list{
+        li{
+            display: inline-block;
+            position: relative;
+            & + li{
+                padding-left: 15px;
+                &::before{
+                    content: '/';
+                    position: absolute;
+                    left: 5px;
+                }
+            }
+            a{
+                color: #fff;
+            }
+            &:last-child{
+                a,
+                span{
+                    color: #bfcad7;
+                }
+            }
+        }
+    }
 }
 //заанимировать всплывающий список filter__title-list

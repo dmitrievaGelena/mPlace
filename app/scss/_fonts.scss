@@ -1,31 +1,53 @@
 @font-face {
-    font-family: 'icomoon';
-    src:  url('../fonts/icomoon.eot?ery1us');
-    src:  url('../fonts/icomoon.eot?ery1us#iefix') format('embedded-opentype'),
-      url('../fonts/icomoon.ttf?ery1us') format('truetype'),
-      url('../fonts/icomoon.woff?ery1us') format('woff'),
-      url('../fonts/icomoon.svg?ery1us#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
-  
-  [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    speak: never;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-  
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .icon-more-vertical:before {
-    content: "\e901";
-  }
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?j088zf');
+  src:  url('../fonts/icomoon.eot?j088zf#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?j088zf') format('truetype'),
+    url('../fonts/icomoon.woff?j088zf') format('woff'),
+    url('../fonts/icomoon.svg?j088zf#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-more-vertical:before {
+  content: "\e901";
+}
+.icon-twitter:before {
+  content: "\f099";
+}
+.icon-facebook:before {
+  content: "\f09a";
+}
+.icon-facebook-f:before {
+  content: "\f09a";
+}
+.icon-pinterest-p:before {
+  content: "\f231";
+}
+.icon-google:before {
+  content: "\ea88";
+}
+.icon-dribbble:before {
+  content: "\eaa7";
+}
+.icon-linkedin2:before {
+  content: "\eaca";
+}
+
   

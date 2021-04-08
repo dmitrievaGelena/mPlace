@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
-
+<div class="wrapper">
+    <div class="content">
 <header class="header">
     <div class="header__top">
         <div class="container">
@@ -1055,7 +1056,7 @@
                                     <div class="profile__user-prof">Product Designer</div>
                                 </div>
                             </div>
-                            <div class="profile__img"></div>
+                            <div class="profile__img lnr lnr-bubble"></div>
                         </div>
                         <div class="feedback__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
                             justo ut scelerisque the mattis, leo quam aliquet diam congue is the laoreet elit metus.
@@ -1073,7 +1074,7 @@
                                     <div class="profile__user-prof">Product Designer</div>
                                 </div>
                             </div>
-                            <div class="profile__img"></div>
+                            <div class="profile__img lnr lnr-bubble"></div>
                         </div>
                         <div class="feedback__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
                             justo ut scelerisque the mattis, leo quam aliquet diam congue is the laoreet elit metus.
@@ -1117,12 +1118,18 @@
                                 </div>
                                 <div class="news__item-icon">
                                     <div class="news__item-clock news__item-block">
-                                        <div class="news__item-img"></div>
+                                        <div class="news__item-img lnr lnr-clock"></div>
                                         <div class="news__item-time">24 Feb 2017</div>
                                     </div>
                                     <div class="news__item-loock news__item-block">
-                                        <div class="news__item-feed">45</div>
-                                        <div class="news__item-view">345</div>
+                                        <div class="news__item-feed">
+                                            45
+                                            <span class="lnr lnr-bubble"></span>
+                                        </div>
+                                        <div class="news__item-view">
+                                            <span class="lnr lnr-eye"></span>
+                                            345
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1148,12 +1155,18 @@
                                 </div>
                                 <div class="news__item-icon">
                                     <div class="news__item-clock news__item-block">
-                                        <div class="news__item-img"></div>
+                                        <div class="news__item-img lnr lnr-clock"></div>
                                         <div class="news__item-time">24 Feb 2017</div>
                                     </div>
                                     <div class="news__item-loock news__item-block">
-                                        <div class="news__item-feed">45</div>
-                                        <div class="news__item-view">345</div>
+                                        <div class="news__item-feed">
+                                            45
+                                            <span class="lnr lnr-bubble"></span>
+                                        </div>
+                                        <div class="news__item-view">
+                                            <span class="lnr lnr-eye"></span>
+                                            345
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1179,12 +1192,18 @@
                                 </div>
                                 <div class="news__item-icon">
                                     <div class="news__item-clock news__item-block">
-                                        <div class="news__item-img"></div>
+                                        <div class="news__item-img lnr lnr-clock"></div>
                                         <div class="news__item-time">24 Feb 2017</div>
                                     </div>
                                     <div class="news__item-loock news__item-block">
-                                        <div class="news__item-feed">45</div>
-                                        <div class="news__item-view">345</div>
+                                        <div class="news__item-feed">
+                                            45
+                                            <span class="lnr lnr-bubble"></span>
+                                        </div>
+                                        <div class="news__item-view">
+                                            <span class="lnr lnr-eye"></span>
+                                            345
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1232,27 +1251,83 @@
         </div>
     </div>
 </section>
+</div>
 <footer class="footer">
     <div class="footer__inner-top">
-        <div class="footer__top-content">
-            <div class="footer__item">
-                <div class="footer__item_logo">
-                    <a href="#">
-                        <img src="img/footer/footer-logo.png" alt="">
+        <div class="container">
+            <div class="footer__top-content">
+                <div class="footer__item footer_info">
+                    <div class="footer__item_logo">
+                        <a href="#">
+                            <img src="img/footer/footer-logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="footer__item-text">Nunc placerat mi id nisi interdum they mollis. Praesent pharetra,
+                        justo ut scel erisque the mattis, leo quam.</div>
+                    <a class="footer__item-phone" href="tell:67898752235">
+                        <span class="lnr lnr-phone-handset"></span>
+                        Phone:+6789-875-2235
                     </a>
+                    <a class="footer__item-mail" href="email:support@aazztech.com">
+                        <span class="lnr lnr-envelope"></span>
+                        support@aazztech.com</a>
+                    <div class="footer__item-adress">
+                        <span class="lnr lnr-map-marker"></span>
+                        202 New Hampshire Avenue
+                        Northwest #100, New York-2573</div>
                 </div>
-                <div class="footer__item-text">Nunc placerat mi id nisi interdum they mollis. Praesent pharetra, justo ut scel erisque the mattis, leo quam.</div>
-                <a class="footer__item-phone" href="tell:">Phone: +6789-875-2235</a>
-                <a class="footer__item-mail" href="email:">support@aazztech.com</a>
-                <div class="footer__item-adress">202 New Hampshire Avenue
-                    Northwest #100, New York-2573</div>
+                <div class="footer__item footer_list">
+                    <div class="footer__item-title">Our Company</div>
+                    <ul class="footer__item-list">
+                        <li>About Us</li>
+                        <li>How It Work</li>
+                        <li>Affiliates</li>
+                        <li>Testimonials</li>
+                        <li>Contact Us</li>
+                        <li>Copyright Notice</li>
+                        <li>Blog</li>
+                    </ul>
+                </div>
+                <div class="footer__item footer_list">
+                    <div class="footer__item-title">Help Support</div>
+                    <ul class="footer__item-list">
+                        <li>Support Forum</li>
+                        <li>Terms & Conditions</li>
+                        <li>Support Policy</li>
+                        <li>Refund Policy</li>
+                        <li>FAQs</li>
+                        <li>Buyers Faq</li>
+                        <li>Sellers Faq</li>
+                    </ul>
+                </div>
+                <div class="footer__item footer_search">
+                    <div class="footer__item-title">Newsletter</div>
+                    <div class="footer__item-subtitle">Subscribe to get the latest news, update and offer information. Don't
+                        worry, we won't send spam!</div>
+                    <form class="footer_form">
+                        <input type="text" placeholder="Enter email">
+                        <button type="submit">Submit</button>
+                    </form>
+                    <div class="footer__item-social">
+                        <div class="footer__item-icon icon-facebook"></div>
+                        <div class="footer__item-icon icon-twitter"></div>
+                        <div class="footer__item-icon icon-pinterest-p"></div>
+                        <div class="footer__item-icon icon-google"></div>
+                        <div class="footer__item-icon icon-dribbble"></div>
+                        <div class="footer__item-icon icon-linkedin2"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <div class="footer__inner-bottom">
-        <div class="footer__bottom-title">©2017 <span>MartPlace</span>. All rights reserved. Created by <span>AazzTech</span></div>
+        <div class="container">
+            <div class="footer__bottom-title">©2017 <span>MartPlace</span>. All rights reserved. Created by
+                <span>AazzTech</span></div>
+        </div>
     </div>
 </footer>
+</div>
 
 <body>
 
