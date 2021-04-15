@@ -15,6 +15,14 @@ $(function () {
         prevArrow: '<button class="slick-arrow slick-prev follow__slick-prev"><span class="lnr lnr-chevron-left"></span></button>',
         nextArrow: '<button class="slick-arrow slick-next follow__slick-next"><span class="lnr lnr-chevron-right"></span></button>'
     });
+    $(".js-range-slider").ionRangeSlider({
+        type: "double",
+        min: 0,
+        max: 1000,
+        from: 30,
+        to: 300,
+        prefix: "$"
+    });
 
     var mixer = mixitup('.products__info-box');
 
@@ -46,3 +54,12 @@ const filterBtn = document.querySelector('.icon-more-vertical'),
 filterBtn.addEventListener('click', () => {
     if (filterList.classList.toggle('hide'));
 });
+
+
+//сделать выпадающие options 
+//сделать открывающиеся блоки в aside 
+const cat = document.querySelector('.cat');
+
+console.log(cat);
+
+

@@ -55,39 +55,593 @@
                 </div>
             </div>
         </header>
-        <section class="search page-search">
-            <div class="search__inner" style="">
-                <div class="container">
-                    <div class="search__inner-info">
-                        <div class="search__inner-text">
-                            4,572 wordpress themes, made with love
+        <div class="new-items__wrapper">
+            <section class="search page-search">
+                <div class="search__inner" style="">
+                    <div class="container">
+                        <div class="search__inner-info">
+                            <div class="search__inner-text">
+                                4,572 wordpress themes, made with love
+                            </div>
+                            <form class="footer_form">
+                                <input type="text" placeholder="Search your products">
+                                <button type="submit">Search</button>
+                            </form>
+                            <div class="breadcrumbs">
+                                <div class="breadcrumbs__inner">
+                                    <ul class="breadcrumbs__list">
+                                        <li>
+                                            <a href="#">Home</a>
+                                        </li>
+                                        <li>
+                                            <span>Category Page Grid</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                        <form class="footer_form">
-                            <input type="text" placeholder="Search your products">
-                            <button type="submit">Search</button>
-                        </form>
-                        <div class="breadcrumbs">
-                            <div class="breadcrumbs__inner">
-                                <ul class="breadcrumbs__list">
+                    </div>
+                </div>
+            </section>
+            <section class="product-page">
+                <div class="product-page__filter">
+                    <div class="container">
+                        <div class="filter__content">
+                            <div class="filter__content-btns">
+                                <a class="active" href="#">New Products</a>
+                                <a href="#">Popular Products</a>
+                            </div>
+                            <div class="filter__content-box">
+                                <select class="filter__content-price">
+                                    <option>Price : Low to High</option>
+                                    <option>Low to High</option>
+                                    <option>Low to High</option>
+                                </select>
+                                <select class="filter__content-page">
+                                    <option>12 Items Per Page</option>
+                                    <option>items1</option>
+                                    <option>items2</option>
+                                </select>
+                                <div class="filter__content-swithes">
+                                    <button class="grid active"></button>
+                                    <button class="list"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="product-page__inner">
+                        <aside class="product-page__aside">
+                            <div class="category aside-item">
+                                <div class="aside__title">
+                                    Categories
+                                </div>
+                                <ul class="category__list">
+                                    <li><a class="icon-chevron-right" href="#">Wordpress</a><span>23</span></li>
+                                    <li><a class="icon-chevron-right" href="#">Landing Page</a><span>45</span></li>
+                                    <li><a class="icon-chevron-right" href="#">Psd Template</a><span>56</span></li>
+                                    <li><a class="icon-chevron-right" href="#">Plugins</a><span>26</span></li>
+                                    <li><a class="icon-chevron-right" href="#">HTML Template</a><span>35</span></li>
+                                    <li><a class="icon-chevron-right" href="#">Components</a><span>76</span></li>
+                                    <li><a class="icon-chevron-right" href="#">Joomla Template</a><span>44</span></li>
+                                </ul>
+                            </div>
+                            <div class="filter__products aside-item">
+                                <div class="aside__title">
+                                    Filter Products
+                                </div>
+                                <ul class="filter__products-list">
                                     <li>
-                                        <a href="#">Home</a>
+                                        <input class="custom_checkbox" type="radio" id="trending" name="trending">
+                                        <label for="trending">Trending Products</label>
                                     </li>
                                     <li>
-                                        <span>Category Page Grid</span>
+                                        <input class="custom_checkbox" type="radio" id="popular" name="popular">
+                                        <label for="popular">Popular Products</label>
                                     </li>
+                                    <li>
+                                        <input class="custom_checkbox" type="radio" id="new" name="new">
+                                        <label for="new">New Products</label>
+                                    </li>
+                                    <li>
+                                        <input class="custom_checkbox" type="radio" id="best" name="best">
+                                        <label for="best">Best Seller</label>
+                                    </li>
+                                    <li>
+                                        <input class="custom_checkbox" type="radio" id="rating" name="rating">
+                                        <label for="rating">Best Rating</label>
+                                    </li>
+                                    <li>
+                                        <input class="custom_checkbox" type="radio" id="low" name="low">
+                                        <label for="low">Low Price</label>
+                                    </li>
+                                    <li>
+                                        <input class="custom_checkbox" type="radio" id="high" name="high">
+                                        <label for="high">High Price</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="pricing-range aside-item">
+                                <div class="aside__title">
+                                    Pricing Range
+                                </div>
+                                <form>
+                                    <input type="text" class="js-range-slider" name="my_range" value="" />
+                                    <button class="pricing-range__btn" type="submit">Search Update</button>
+                                </form>
+                            </div>
+                        </aside>
+                        <div class="product-page__items">
+                            <div class="product-page__items-content">
+                                <div class="product__item">
+                                    <a class="product__item-img" href="#">
+                                        <div class="product__item-img_content"
+                                            style="background-image: url(/img/content/product-item.jpg);">
+                                        </div>
+                                    </a>
+                                    <div class="product__item-content">
+                                        <div class="slider__item-box product__item-box">
+                                            <a class="slider__item-title product__item-title" href="#">Finance and
+                                                Consulting
+                                                Business Theme</a>
+                                            <div class="slider__item-text product__item-text">
+                                                Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                                            </div>
+                                            <div class="product__items-profile">
+                                                <div class="slider__item-profile">
+                                                    <a class="slider__item-user" href="#">
+                                                        <div class="user-avatar" style="background-image: url();"></div>
+                                                        <div class="user-name">Artcorner</div>
+                                                    </a>
+                                                </div>
+                                                <div class="product__items-comments">
+                                                    <div class="product__items-loves lnr lnr-bubble"><span>90 loves</span>
+                                                    </div>
+                                                    <div class="product__items-comment lnr lnr-heart"><span>90
+                                                            Comments</span></div>
+                                                </div>
+                                                <div class="product__items-rate">
+                                                    <div class="box-rate">
+                                                        <div class="rate-star"></div>
+                                                        <span>(32)</span>
+                                                    </div>
+                                                    <div class="slider__item-buy lnr lnr-cart">246</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slider__item-rat product__item-rat">
+                                            <div class="slider__item-icon">
+                                                <div class="product__items-money">
+                                                    <div class="slider__item-price product__item-price">$20</div>
+                                                    <div class="slider__item-buy lnr lnr-cart">246</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="slider__item-program" href="#">
+                                            <img class="program-img" src="img/slider/wordpress.svg" alt="">
+                                            <div class="program-name">Wordpress</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product__item">
+                                    <a class="product__item-img" href="#">
+                                        <div class="product__item-img_content"
+                                            style="background-image: url(/img/content/product-item.jpg);">
+                                        </div>
+                                    </a>
+                                    <div class="product__item-content">
+                                        <div class="slider__item-box product__item-box">
+                                            <a class="slider__item-title product__item-title" href="#">Finance and
+                                                Consulting
+                                                Business Theme</a>
+                                            <div class="slider__item-text product__item-text">
+                                                Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                                            </div>
+                                            <div class="product__items-profile">
+                                                <div class="slider__item-profile">
+                                                    <a class="slider__item-user" href="#">
+                                                        <div class="user-avatar" style="background-image: url();"></div>
+                                                        <div class="user-name">Artcorner</div>
+                                                    </a>
+                                                </div>
+                                                <div class="product__items-comments">
+                                                    <div class="product__items-loves lnr lnr-bubble"><span>90 loves</span>
+                                                    </div>
+                                                    <div class="product__items-comment lnr lnr-heart"><span>90
+                                                            Comments</span></div>
+                                                </div>
+                                                <div class="product__items-rate">
+                                                    <div class="box-rate">
+                                                        <div class="rate-star"></div>
+                                                        <span>(32)</span>
+                                                    </div>
+                                                    <div class="slider__item-buy lnr lnr-cart">246</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slider__item-rat product__item-rat">
+                                            <div class="slider__item-icon">
+                                                <div class="product__items-money">
+                                                    <div class="slider__item-price product__item-price">$20</div>
+                                                    <div class="slider__item-buy lnr lnr-cart">246</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="slider__item-program" href="#">
+                                            <img class="program-img" src="img/slider/wordpress.svg" alt="">
+                                            <div class="program-name">Wordpress</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product__item">
+                                    <a class="product__item-img" href="#">
+                                        <div class="product__item-img_content"
+                                            style="background-image: url(/img/content/product-item.jpg);">
+                                        </div>
+                                    </a>
+                                    <div class="product__item-content">
+                                        <div class="slider__item-box product__item-box">
+                                            <a class="slider__item-title product__item-title" href="#">Finance and
+                                                Consulting
+                                                Business Theme</a>
+                                            <div class="slider__item-text product__item-text">
+                                                Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                                            </div>
+                                            <div class="product__items-profile">
+                                                <div class="slider__item-profile">
+                                                    <a class="slider__item-user" href="#">
+                                                        <div class="user-avatar" style="background-image: url();"></div>
+                                                        <div class="user-name">Artcorner</div>
+                                                    </a>
+                                                </div>
+                                                <div class="product__items-comments">
+                                                    <div class="product__items-loves lnr lnr-bubble"><span>90 loves</span>
+                                                    </div>
+                                                    <div class="product__items-comment lnr lnr-heart"><span>90
+                                                            Comments</span></div>
+                                                </div>
+                                                <div class="product__items-rate">
+                                                    <div class="box-rate">
+                                                        <div class="rate-star"></div>
+                                                        <span>(32)</span>
+                                                    </div>
+                                                    <div class="slider__item-buy lnr lnr-cart">246</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slider__item-rat product__item-rat">
+                                            <div class="slider__item-icon">
+                                                <div class="product__items-money">
+                                                    <div class="slider__item-price product__item-price">$20</div>
+                                                    <div class="slider__item-buy lnr lnr-cart">246</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="slider__item-program" href="#">
+                                            <img class="program-img" src="img/slider/wordpress.svg" alt="">
+                                            <div class="program-name">Wordpress</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product__item">
+                                    <a class="product__item-img" href="#">
+                                        <div class="product__item-img_content"
+                                            style="background-image: url(/img/content/product-item.jpg);">
+                                        </div>
+                                    </a>
+                                    <div class="product__item-content">
+                                        <div class="slider__item-box product__item-box">
+                                            <a class="slider__item-title product__item-title" href="#">Finance and
+                                                Consulting
+                                                Business Theme</a>
+                                            <div class="slider__item-text product__item-text">
+                                                Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                                            </div>
+                                            <div class="product__items-profile">
+                                                <div class="slider__item-profile">
+                                                    <a class="slider__item-user" href="#">
+                                                        <div class="user-avatar" style="background-image: url();"></div>
+                                                        <div class="user-name">Artcorner</div>
+                                                    </a>
+                                                </div>
+                                                <div class="product__items-comments">
+                                                    <div class="product__items-loves lnr lnr-bubble"><span>90 loves</span>
+                                                    </div>
+                                                    <div class="product__items-comment lnr lnr-heart"><span>90
+                                                            Comments</span></div>
+                                                </div>
+                                                <div class="product__items-rate">
+                                                    <div class="box-rate">
+                                                        <div class="rate-star"></div>
+                                                        <span>(32)</span>
+                                                    </div>
+                                                    <div class="slider__item-buy lnr lnr-cart">246</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slider__item-rat product__item-rat">
+                                            <div class="slider__item-icon">
+                                                <div class="product__items-money">
+                                                    <div class="slider__item-price product__item-price">$20</div>
+                                                    <div class="slider__item-buy lnr lnr-cart">246</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="slider__item-program" href="#">
+                                            <img class="program-img" src="img/slider/wordpress.svg" alt="">
+                                            <div class="program-name">Wordpress</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product__item">
+                                    <a class="product__item-img" href="#">
+                                        <div class="product__item-img_content"
+                                            style="background-image: url(/img/content/product-item.jpg);">
+                                        </div>
+                                    </a>
+                                    <div class="product__item-content">
+                                        <div class="slider__item-box product__item-box">
+                                            <a class="slider__item-title product__item-title" href="#">Finance and
+                                                Consulting
+                                                Business Theme</a>
+                                            <div class="slider__item-text product__item-text">
+                                                Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                                            </div>
+                                            <div class="product__items-profile">
+                                                <div class="slider__item-profile">
+                                                    <a class="slider__item-user" href="#">
+                                                        <div class="user-avatar" style="background-image: url();"></div>
+                                                        <div class="user-name">Artcorner</div>
+                                                    </a>
+                                                </div>
+                                                <div class="product__items-comments">
+                                                    <div class="product__items-loves lnr lnr-bubble"><span>90 loves</span>
+                                                    </div>
+                                                    <div class="product__items-comment lnr lnr-heart"><span>90
+                                                            Comments</span></div>
+                                                </div>
+                                                <div class="product__items-rate">
+                                                    <div class="box-rate">
+                                                        <div class="rate-star"></div>
+                                                        <span>(32)</span>
+                                                    </div>
+                                                    <div class="slider__item-buy lnr lnr-cart">246</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slider__item-rat product__item-rat">
+                                            <div class="slider__item-icon">
+                                                <div class="product__items-money">
+                                                    <div class="slider__item-price product__item-price">$20</div>
+                                                    <div class="slider__item-buy lnr lnr-cart">246</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="slider__item-program" href="#">
+                                            <img class="program-img" src="img/slider/wordpress.svg" alt="">
+                                            <div class="program-name">Wordpress</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product__item">
+                                    <a class="product__item-img" href="#">
+                                        <div class="product__item-img_content"
+                                            style="background-image: url(/img/content/product-item.jpg);">
+                                        </div>
+                                    </a>
+                                    <div class="product__item-content">
+                                        <div class="slider__item-box product__item-box">
+                                            <a class="slider__item-title product__item-title" href="#">Finance and
+                                                Consulting
+                                                Business Theme</a>
+                                            <div class="slider__item-text product__item-text">
+                                                Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                                            </div>
+                                            <div class="product__items-profile">
+                                                <div class="slider__item-profile">
+                                                    <a class="slider__item-user" href="#">
+                                                        <div class="user-avatar" style="background-image: url();"></div>
+                                                        <div class="user-name">Artcorner</div>
+                                                    </a>
+                                                </div>
+                                                <div class="product__items-comments">
+                                                    <div class="product__items-loves lnr lnr-bubble"><span>90 loves</span>
+                                                    </div>
+                                                    <div class="product__items-comment lnr lnr-heart"><span>90
+                                                            Comments</span></div>
+                                                </div>
+                                                <div class="product__items-rate">
+                                                    <div class="box-rate">
+                                                        <div class="rate-star"></div>
+                                                        <span>(32)</span>
+                                                    </div>
+                                                    <div class="slider__item-buy lnr lnr-cart">246</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slider__item-rat product__item-rat">
+                                            <div class="slider__item-icon">
+                                                <div class="product__items-money">
+                                                    <div class="slider__item-price product__item-price">$20</div>
+                                                    <div class="slider__item-buy lnr lnr-cart">246</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="slider__item-program" href="#">
+                                            <img class="program-img" src="img/slider/wordpress.svg" alt="">
+                                            <div class="program-name">Wordpress</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product__item">
+                                    <a class="product__item-img" href="#">
+                                        <div class="product__item-img_content"
+                                            style="background-image: url(/img/content/product-item.jpg);">
+                                        </div>
+                                    </a>
+                                    <div class="product__item-content">
+                                        <div class="slider__item-box product__item-box">
+                                            <a class="slider__item-title product__item-title" href="#">Finance and
+                                                Consulting
+                                                Business Theme</a>
+                                            <div class="slider__item-text product__item-text">
+                                                Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                                            </div>
+                                            <div class="product__items-profile">
+                                                <div class="slider__item-profile">
+                                                    <a class="slider__item-user" href="#">
+                                                        <div class="user-avatar" style="background-image: url();"></div>
+                                                        <div class="user-name">Artcorner</div>
+                                                    </a>
+                                                </div>
+                                                <div class="product__items-comments">
+                                                    <div class="product__items-loves lnr lnr-bubble"><span>90 loves</span>
+                                                    </div>
+                                                    <div class="product__items-comment lnr lnr-heart"><span>90
+                                                            Comments</span></div>
+                                                </div>
+                                                <div class="product__items-rate">
+                                                    <div class="box-rate">
+                                                        <div class="rate-star"></div>
+                                                        <span>(32)</span>
+                                                    </div>
+                                                    <div class="slider__item-buy lnr lnr-cart">246</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slider__item-rat product__item-rat">
+                                            <div class="slider__item-icon">
+                                                <div class="product__items-money">
+                                                    <div class="slider__item-price product__item-price">$20</div>
+                                                    <div class="slider__item-buy lnr lnr-cart">246</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="slider__item-program" href="#">
+                                            <img class="program-img" src="img/slider/wordpress.svg" alt="">
+                                            <div class="program-name">Wordpress</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product__item">
+                                    <a class="product__item-img" href="#">
+                                        <div class="product__item-img_content"
+                                            style="background-image: url(/img/content/product-item.jpg);">
+                                        </div>
+                                    </a>
+                                    <div class="product__item-content">
+                                        <div class="slider__item-box product__item-box">
+                                            <a class="slider__item-title product__item-title" href="#">Finance and
+                                                Consulting
+                                                Business Theme</a>
+                                            <div class="slider__item-text product__item-text">
+                                                Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                                            </div>
+                                            <div class="product__items-profile">
+                                                <div class="slider__item-profile">
+                                                    <a class="slider__item-user" href="#">
+                                                        <div class="user-avatar" style="background-image: url();"></div>
+                                                        <div class="user-name">Artcorner</div>
+                                                    </a>
+                                                </div>
+                                                <div class="product__items-comments">
+                                                    <div class="product__items-loves lnr lnr-bubble"><span>90 loves</span>
+                                                    </div>
+                                                    <div class="product__items-comment lnr lnr-heart"><span>90
+                                                            Comments</span></div>
+                                                </div>
+                                                <div class="product__items-rate">
+                                                    <div class="box-rate">
+                                                        <div class="rate-star"></div>
+                                                        <span>(32)</span>
+                                                    </div>
+                                                    <div class="slider__item-buy lnr lnr-cart">246</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slider__item-rat product__item-rat">
+                                            <div class="slider__item-icon">
+                                                <div class="product__items-money">
+                                                    <div class="slider__item-price product__item-price">$20</div>
+                                                    <div class="slider__item-buy lnr lnr-cart">246</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="slider__item-program" href="#">
+                                            <img class="program-img" src="img/slider/wordpress.svg" alt="">
+                                            <div class="program-name">Wordpress</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product__item">
+                                    <a class="product__item-img" href="#">
+                                        <div class="product__item-img_content"
+                                            style="background-image: url(/img/content/product-item.jpg);">
+                                        </div>
+                                    </a>
+                                    <div class="product__item-content">
+                                        <div class="slider__item-box product__item-box">
+                                            <a class="slider__item-title product__item-title" href="#">Finance and
+                                                Consulting
+                                                Business Theme</a>
+                                            <div class="slider__item-text product__item-text">
+                                                Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                                            </div>
+                                            <div class="product__items-profile">
+                                                <div class="slider__item-profile">
+                                                    <a class="slider__item-user" href="#">
+                                                        <div class="user-avatar" style="background-image: url();"></div>
+                                                        <div class="user-name">Artcorner</div>
+                                                    </a>
+                                                </div>
+                                                <div class="product__items-comments">
+                                                    <div class="product__items-loves lnr lnr-bubble"><span>90 loves</span>
+                                                    </div>
+                                                    <div class="product__items-comment lnr lnr-heart"><span>90
+                                                            Comments</span></div>
+                                                </div>
+                                                <div class="product__items-rate">
+                                                    <div class="box-rate">
+                                                        <div class="rate-star"></div>
+                                                        <span>(32)</span>
+                                                    </div>
+                                                    <div class="slider__item-buy lnr lnr-cart">246</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slider__item-rat product__item-rat">
+                                            <div class="slider__item-icon">
+                                                <div class="product__items-money">
+                                                    <div class="slider__item-price product__item-price">$20</div>
+                                                    <div class="slider__item-buy lnr lnr-cart">246</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="slider__item-program" href="#">
+                                            <img class="program-img" src="img/slider/wordpress.svg" alt="">
+                                            <div class="program-name">Wordpress</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pagination">
+                                <ul class="pagination__list">
+                                    <li><a class="pagination-btn pagination-btn__prev lnr lnr-arrow-left" href="#"></a></li>
+                                    <li class="first-active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">...</a></li>
+                                    <li class="active-arrow"><a class="pagination-btn pagination-btn__next lnr lnr-arrow-right" href="#"></a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <div class="page-content"></div>
+            </section>
 
 
-
-
-
+        </div>
     </div>
 
     <footer class="footer">
@@ -160,6 +714,7 @@
         </div>
     </footer>
 </div>
+
 
 <body>
 
