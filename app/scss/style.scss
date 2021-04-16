@@ -1951,6 +1951,96 @@
             max-width: 260px;
             overflow: auto;
             margin-bottom: 30px;
+            transition: all .5s;
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            -ms-transition: all .5s;
+            -o-transition: all .5s;
+
+            &.list {
+                max-width: 100%;
+                display: flex;
+                min-height: 210px;
+
+                .product__item-img {
+                    max-width: 230px;
+                    width: 100%;
+                }
+
+                .product__item-img_content {
+                    min-height: 100%;
+                }
+
+                .product__item-content {
+                    display: flex;
+                    width: 100%;
+                    padding: 25px 20px 30px 15px;
+                }
+
+                .slider__item-text,
+                .product__items-comments,
+                .slider__item-buy {
+                    display: block;
+                }
+
+                .product__item-box {
+                    display: flex;
+                    padding: 0;
+                    border: none;
+                }
+
+                .product__items-info {
+                    max-width: 260px;
+                    padding-right: 15px;
+                    border-right: 1px solid #ececec;
+                }
+
+                .product__item-title {
+                    margin-bottom: 25px;
+                }
+                .product__item-text{
+                    margin-bottom: 0px;
+                }
+                .product__items-profile{
+                    max-width: 210px;
+                    width: 100%;
+                    padding: 0 20px;
+                    border-right: 1px solid #ececec;
+                }
+                .box-rate{
+                    span{
+                        display: block;
+                    }
+                }
+                .lnr-bubble,
+                .lnr-heart{
+                    &::before{
+                        color: #7f4ec2;
+                    }
+                }
+                .product__items-rate{
+                    .slider__item-buy{
+                        display: none;
+                    }
+                }
+                .product__item-price{
+                    width: 100px;
+                    margin-right: 0;
+                }
+                .product__item-rat{
+                    padding: 0;
+                    width: 150px;
+                    max-width: 100%;
+                    .lnr-cart{
+                        margin-top: 25px;
+                        text-align: center;
+                    }
+                }
+                .slider__item-program{
+                    bottom: 25px;
+                    left: 15px;
+                }
+            }
         }
 
         .product__item-box {
@@ -1958,6 +2048,7 @@
             margin-bottom: 0;
             padding: 17px;
             min-height: 150px;
+            width: 100%;
         }
 
         .product__item-img_content {
@@ -1967,6 +2058,10 @@
         .product__item-title {
             line-height: 24px;
             font-size: 18px;
+        }
+
+        .slider__item-box {
+            max-width: 100%;
         }
 
         .slider__item-user {
@@ -2016,6 +2111,7 @@
 
         .product__items-comments {
             display: none;
+            font-size: 16px;
 
             .lnr-bubble {
                 &::before {
@@ -2069,26 +2165,32 @@
                 -moz-border-radius: 20px;
                 -ms-border-radius: 20px;
                 -o-border-radius: 20px;
-                a{
+
+                a {
                     color: #747b86;
                 }
             }
-            .first-active{
+
+            .first-active {
                 background-color: $blue;
-                a{
+
+                a {
                     color: #fff;
                 }
             }
+
             .lnr-arrow-left,
-            .lnr-arrow-right{
-                &::before{
+            .lnr-arrow-right {
+                &::before {
                     color: #333;
                 }
             }
-            .active-arrow{
+
+            .active-arrow {
                 background-color: #7347c1;
-                .lnr-arrow-right{
-                    &::before{
+
+                .lnr-arrow-right {
+                    &::before {
                         color: #fff;
                     }
                 }

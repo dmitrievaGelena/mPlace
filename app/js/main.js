@@ -24,6 +24,17 @@ $(function () {
         prefix: "$"
     });
 
+    $('.list').on('click', function() {
+        $('.product__item').addClass('list');
+        $('.list').addClass('active');
+        $('.grid').removeClass('active');
+    });
+    $('.grid').on('click', function() {
+        $('.grid').addClass('active');
+        $('.list').removeClass('active');
+        $('.product__item').removeClass('list');
+    });
+
     var mixer = mixitup('.products__info-box');
 
 });
@@ -61,5 +72,3 @@ filterBtn.addEventListener('click', () => {
 const cat = document.querySelector('.cat');
 
 console.log(cat);
-
-
