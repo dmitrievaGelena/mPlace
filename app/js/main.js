@@ -24,12 +24,12 @@ $(function () {
         prefix: "$"
     });
 
-    $('.list').on('click', function() {
+    $('.list').on('click', function () {
         $('.product__item').addClass('list');
         $('.list').addClass('active');
         $('.grid').removeClass('active');
     });
-    $('.grid').on('click', function() {
+    $('.grid').on('click', function () {
         $('.grid').addClass('active');
         $('.list').removeClass('active');
         $('.product__item').removeClass('list');
@@ -69,6 +69,11 @@ filterBtn.addEventListener('click', () => {
 
 //сделать выпадающие options 
 //сделать открывающиеся блоки в aside 
-const cat = document.querySelector('.cat');
 
-console.log(cat);
+
+// const btn = document.querySelector('.bropdown-btn'),
+//     btnMenu = document.querySelector('.bropdown-btn__menu');
+  $('.dropdown-btn').click(function() {
+        $('.dropdown-btn__menu').slideToggle();
+    });
+
