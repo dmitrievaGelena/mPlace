@@ -69,17 +69,22 @@
 
     .menu {
         position: relative;
+
         li {
             height: 50px;
             margin-top: 40px;
         }
-        .menu__btn{
+
+        .menu__btn {
             position: absolute;
-            width: 40px;
+            width: 30px;
             height: 40px;
-            top: 35px;
+            top: 25px;
+            left: 25px;
             display: none;
-            span{
+            z-index: 98;
+
+            span {
                 display: block;
                 width: 100%;
                 height: 3px;
@@ -143,17 +148,6 @@
         position: relative;
         z-index: 99;
 
-        &:hover {
-            .dropdown__menu {
-                height: auto;
-                overflow: auto;
-                padding: 20px;
-                border-top: 2px solid $blue;
-                box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
-
-            }
-        }
-
         &__menu {
             position: absolute;
             border-radius: 0px 0px 5px 5px;
@@ -161,17 +155,13 @@
             -moz-border-radius: 0px 0px 5px 5px;
             -ms-border-radius: 0px 0px 5px 5px;
             -o-border-radius: 0px 0px 5px 5px;
-            transition: all .3s;
-            -webkit-transition: all .3s;
-            -moz-transition: all .3s;
-            -ms-transition: all .3s;
-            -o-transition: all .3s;
             width: 270px;
             background-color: #fff;
             top: 45px;
-            padding: 0 20px;
-            height: 0;
-            overflow: hidden;
+            padding: 20px;
+            display: none;
+            border-top: 2px solid $blue;
+            box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
 
             li {
                 width: 100%;
@@ -217,44 +207,48 @@
     .dropdown-btn {
         &:hover {
             .dropdown-btn__menu {
-                padding: 30px 20px;
-                overflow: auto;
                 height: auto;
-                border-top: 1px solid $blue;
+                overflow: auto;
+            }
+
+            .dropdown-btn__menu-content {
+                padding: 30px 20px;
             }
         }
 
         &__menu {
-            // display: block;
-            padding: 0px 20px;
-            box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
+            // display: none;
             z-index: 99;
             position: absolute;
             right: 0;
             left: 0;
             width: 1140px;
             top: 80px;
+            box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
+            height: 0;
+            overflow: hidden;
+        }
+
+        &__menu-content {
+            display: flex;
+            border-top: 1px solid $blue;
+            justify-content: space-between;
+            padding: 0 20px;
             background-color: #fff;
             -webkit-border-radius: 0px 0px 5px 5px;
             -moz-border-radius: 0px 0px 5px 5px;
             -ms-border-radius: 0px 0px 5px 5px;
             -o-border-radius: 0px 0px 5px 5px;
             border-radius: 0px 0px 5px 5px;
-            height: 0;
-            overflow: hidden;
-            transition: all .5s;
-            -webkit-transition: all .5s;
-            -moz-transition: all .5s;
-            -ms-transition: all .5s;
-            -o-transition: all .5s;
-        }
-        &__menu-content{
-            display: flex;
-            justify-content: space-between;
+            transition: all .3s;
+            -webkit-transition: all .3s;
+            -moz-transition: all .3s;
+            -ms-transition: all .3s;
+            -o-transition: all .3s;
         }
 
         .dropdown__item {
-            width: 100%;
+            // width: 100%;
 
             &-pages {
                 max-width: 437px;
@@ -769,6 +763,7 @@
 
             .message__menu-info {
                 padding: 25px;
+                font-family: 'Quicksand', sans-serif !important;
             }
         }
     }
@@ -837,6 +832,7 @@
                 max-width: 180px;
                 width: 100%;
                 margin-left: 15px;
+                font-family: 'Quicksand', sans-serif !important;
             }
 
             &-title {

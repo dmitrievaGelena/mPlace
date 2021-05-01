@@ -153,4 +153,9 @@ body {
         }
     }
 }
+.icon-remove{
+    &::before{
+        display: none;
+    }
+}
 //заанимировать всплывающий список filter__title-list
