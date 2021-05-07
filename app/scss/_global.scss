@@ -153,9 +153,57 @@ body {
         }
     }
 }
-.icon-remove{
-    &::before{
+
+.icon-remove {
+    &::before {
         display: none;
     }
 }
+
+.product-link {
+    width: 190px;
+    background-color: #fff;
+    padding: 15px 10px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    color: #7347c1;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+
+    &:hover {
+        background-color: $blue;
+        transition: all .3s;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        -ms-transition: all .3s;
+        -o-transition: all .3s;
+        color: #fff;
+
+        .lnr-heart {
+            margin-right: 10px;
+
+            &::before {
+                color: #fff;
+            }
+        }
+    }
+}
+.purple{
+    background-color: #7347c1;
+}
+.blue{
+    background-color: $blue;
+}
+
 //заанимировать всплывающий список filter__title-list
