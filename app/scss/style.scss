@@ -3501,9 +3501,10 @@
     //end more
 
     //start favourites-page
-    .favourites{
+    .favourites {
         background-color: #eff1f5;
     }
+
     .favourites-page {
         .filter__content-btns {
             a {
@@ -3596,9 +3597,141 @@
         }
     }
 
-
-
     //and favourites-page
+
+    //satrt checkin
+
+    .checkin {
+        background-color: #eff1f5;
+
+        &__inner {
+            padding: 70px 0 120px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .login,
+    .register {
+        padding: 60px 0;
+        background-color: #fff;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        width: 550px;
+    }
+
+    .login {
+        &__greeting {
+            padding-bottom: 30px;
+            border-bottom: 1px solid #e8ebf0;
+            text-align: center;
+        }
+
+        &__title {
+            font-size: 26px;
+            line-height: 28px;
+            font-weight: 500;
+            margin-bottom: 25px;
+        }
+
+        &__subtitle {
+            font-size: 16px;
+            line-height: 28px;
+            color: $text;
+            font-weight: 500;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        &__form {
+            padding: 30px 40px;
+
+            form {
+                label {
+                    display: block;
+                    font-size: 16px;
+                    font-weight: 600;
+                    margin-bottom: 15px;
+                }
+
+                input {
+                    width: 100%;
+                    border: none;
+                    background-color: #f4f5f8;
+                    padding: 15px 20px;
+                    margin-bottom: 30px;
+                    outline: none;
+
+                    &::placeholder {
+                        color: #898f96;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+
+        .check {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+
+            input {
+                width: auto;
+                margin-bottom: 0;
+            }
+        }
+
+        &__remember {
+            margin-left: 10px;
+            font-size: 16px;
+            color: $text;
+            font-weight: 500;
+        }
+
+        &__btn {
+            width: 190px;
+            text-align: center;
+            background-color: $blue;
+            padding: 15px 0;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 30px;
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            -ms-border-radius: 30px;
+            -o-border-radius: 30px;
+        }
+
+        &__questions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        &__restore,
+        &__create {
+            font-size: 16px;
+            color: #898f96;
+            line-height: 26px;
+
+            a {
+                color: $blue;
+            }
+        }
+    }
+
+    .register__account {
+        font-size: 16px;
+        color: #898f96;
+        line-height: 26px;
+    }
+
+    //end checkin
 
     @import 'media';
 
