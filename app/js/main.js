@@ -15,7 +15,8 @@ dropDownMenu('.dropdown-wordpres', '.dropdown__menu-wordpress');
 dropDownMenu('.dropdown__btn-pages', '.dropdown__item-box_pages');
 dropDownMenu('.dropdown__btn-dashboard', '.dropdown__item-box_dashboard');
 dropDownMenu('.dropdown__btn-others', '.dropdown__item-box_others');
-dropDownMenu('.menu__btn', '.menu__list');
+dropDownMenu('.favourites-page__dropdown', '.favourites-page__list');
+
 
 
 btns.forEach(item => {
