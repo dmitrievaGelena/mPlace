@@ -3612,7 +3612,8 @@
     }
 
     .login,
-    .register {
+    .register,
+    .verification {
         padding: 60px 0;
         background-color: #fff;
         border-radius: 5px;
@@ -3729,9 +3730,89 @@
         font-size: 16px;
         color: #898f96;
         line-height: 26px;
+
+        a {
+            color: $blue;
+        }
+    }
+
+    .verification {
+        .login__subtitle {
+            text-align: left;
+        }
     }
 
     //end checkin
+
+    //start works
+    .works-search {
+        .search__inner-text{
+            text-align: center;
+            max-width: 345px;
+            margin: 0 auto;
+            line-height: 45px;
+            margin-bottom: 60px;
+            span{
+                font-weight: 400;
+            }
+        }
+        .breadcrumbs__list{
+            text-align: center;
+        }
+    }
+    .works{
+        &__inner-middle{
+            background-color: #eff1f5;
+            .works__inner-btn{
+                background-color: #fff;
+                color: $blue;
+            }
+        }
+        &__inner-top,
+        &__inner-middle,
+        &__inner-bottom{
+            padding: 90px 0;
+        }
+        &__inner-content{
+            display: flex;
+            justify-content: space-between;
+        }
+        &__inner-info{
+            max-width: 455px;
+        }
+        &__inner-title{
+            font-size: 30px;
+            line-height: 46px;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+        &__inner-text{
+            font-size: 16px;
+            color: $text;
+            line-height: 30px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        &__inner-btn{
+            width: 165px;
+            background-color: $blue;
+            text-align: center;
+            font-size: 16px;
+            color: #fff;
+            padding: 15px 10px;
+            border-radius: 30px;
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            -ms-border-radius: 30px;
+            -o-border-radius: 30px;
+            box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            font-weight: 500;
+        }
+    }
+    //end works
+   
+      
 
     @import 'media';
 

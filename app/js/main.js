@@ -1,84 +1,3 @@
-const btns = document.querySelectorAll('.btn-box'),
-    btnsContent = document.querySelectorAll('.box-content'),
-    btnClose = document.querySelector('.icon-remove'),
-    button = document.querySelector('.btn-click'),
-    buttonClick = document.querySelector('.btn-click_box'),
-    btnView = document.querySelector('.btn-view'),
-    btnProduct = document.querySelector('.btn-product'),
-    btnCreateAccount = document.querySelector('.login__create'),
-    loginContent = document.querySelector('.login'),
-    btnLogin = document.querySelector('.register__account'),
-    registerContent = document.querySelector('.register');
-
-
-
-
-btnCreateAccount.addEventListener('click', (event) => {
-    event.preventDefault();
-    if (loginContent.classList.contains('show')) {
-        loginContent.classList.add('hide');
-        loginContent.classList.remove('show');
-        registerContent.classList.add('show');
-        registerContent.classList.remove('hide');
-    }
-    event.target.reset();
-
-});
-btnLogin.addEventListener('click', (event) => {
-    event.preventDefault();
-    if (registerContent.classList.contains('show')) {
-        loginContent.classList.add('show');
-        loginContent.classList.remove('hide');
-        registerContent.classList.add('hide');
-        registerContent.classList.remove('show');
-    }
-    event.target.reset();
-});
-
-function dropDownMenu(btn, list) {
-    $(btn).click(function () {
-        $(list).slideToggle();
-    });
-}
-
-
-
-btns.forEach(item => {
-    item.addEventListener('click', () => {
-        btnsContent.forEach(i => {
-            i.classList.toggle('active-menu');
-        });
-    });
-});
-
-
-
-function changeBtn() {
-    btnView.addEventListener('click', (ev) => {
-        ev.preventDefault();
-        ev.target.classList.add('active_btn');
-        btnProduct.classList.remove('active_btn');
-    });
-    btnProduct.addEventListener('click', (even) => {
-        even.preventDefault();
-        even.target.classList.add('active_btn');
-        btnView.classList.remove('active_btn');
-    });
-}
-changeBtn();
-
-
-
-
-
-dropDownMenu('.dropdown-home', '.dropdown__menu-home');
-dropDownMenu('.dropdown-product', '.dropdown__menu-product');
-dropDownMenu('.dropdown-wordpres', '.dropdown__menu-wordpress');
-dropDownMenu('.dropdown__btn-pages', '.dropdown__item-box_pages');
-dropDownMenu('.dropdown__btn-dashboard', '.dropdown__item-box_dashboard');
-dropDownMenu('.dropdown__btn-others', '.dropdown__item-box_others');
-dropDownMenu('.favourites-page__dropdown', '.favourites-page__list');
-
 
 $(function () {
     $(".rate-star").rateYo({
@@ -127,3 +46,89 @@ $(function () {
     var mixer = mixitup('.products__info-box');
 
 });
+
+const btns = document.querySelectorAll('.btn-box'),
+    btnsContent = document.querySelectorAll('.box-content'),
+    btnClose = document.querySelector('.icon-remove'),
+    button = document.querySelector('.btn-click'),
+    buttonClick = document.querySelector('.btn-click_box'),
+    btnView = document.querySelector('.btn-view'),
+    btnProduct = document.querySelector('.btn-product'),
+    btnCreateAccount = document.querySelector('.login__create'),
+    loginContent = document.querySelector('.login'),
+    btnLogin = document.querySelector('.register__account'),
+    registerContent = document.querySelector('.register'),
+    btnVerification = document.querySelector('.login__restore'),
+    verificationContent = document.querySelector('.verification');
+
+
+btnCreateAccount.addEventListener('click', (event) => {
+    event.preventDefault();
+    if (loginContent.classList.contains('show')) {
+        loginContent.classList.add('hide');
+        loginContent.classList.remove('show');
+        registerContent.classList.add('show');
+        registerContent.classList.remove('hide');
+    }
+    event.target.reset();
+
+});
+btnLogin.addEventListener('click', (event) => {
+    event.preventDefault();
+    if (registerContent.classList.contains('show')) {
+        loginContent.classList.add('show');
+        loginContent.classList.remove('hide');
+        registerContent.classList.add('hide');
+        registerContent.classList.remove('show');
+    }
+    event.target.reset();
+});
+
+btnVerification.addEventListener('click', (event) => {
+    if (loginContent.classList.contains('show')) {
+        loginContent.classList.add('hide');
+        loginContent.classList.remove('show');
+        verificationContent.classList.add('show');
+        verificationContent.classList.remove('hide');
+    }
+    event.target.reset();
+})
+
+function dropDownMenu(btn, list) {
+    $(btn).click(function () {
+        $(list).slideToggle();
+    });
+}
+
+
+btns.forEach(item => {
+    item.addEventListener('click', () => {
+        btnsContent.forEach(i => {
+            i.classList.toggle('active-menu');
+        });
+    });
+});
+
+
+function changeBtn() {
+    btnView.addEventListener('click', (ev) => {
+        ev.preventDefault();
+        ev.target.classList.add('active_btn');
+        btnProduct.classList.remove('active_btn');
+    });
+    btnProduct.addEventListener('click', (even) => {
+        even.preventDefault();
+        even.target.classList.add('active_btn');
+        btnView.classList.remove('active_btn');
+    });
+}
+changeBtn();
+
+
+dropDownMenu('.dropdown-home', '.dropdown__menu-home');
+dropDownMenu('.dropdown-product', '.dropdown__menu-product');
+dropDownMenu('.dropdown-wordpres', '.dropdown__menu-wordpress');
+dropDownMenu('.dropdown__btn-pages', '.dropdown__item-box_pages');
+dropDownMenu('.dropdown__btn-dashboard', '.dropdown__item-box_dashboard');
+dropDownMenu('.dropdown__btn-others', '.dropdown__item-box_others');
+dropDownMenu('.favourites-page__dropdown', '.favourites-page__list');
