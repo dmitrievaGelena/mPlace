@@ -1,3 +1,19 @@
+function dropDownMenu(btn, list) {
+    $(btn).click(function () {
+        $(list).slideToggle();
+    });
+}
+
+dropDownMenu('.dropdown-home', '.dropdown__menu-home');
+dropDownMenu('.dropdown-product', '.dropdown__menu-product');
+dropDownMenu('.dropdown-wordpres', '.dropdown__menu-wordpress');
+dropDownMenu('.dropdown__btn-pages', '.dropdown__item-box_pages');
+dropDownMenu('.dropdown__btn-dashboard', '.dropdown__item-box_dashboard');
+dropDownMenu('.dropdown__btn-others', '.dropdown__item-box_others');
+dropDownMenu('.favourites-page__dropdown', '.favourites-page__list');
+dropDownMenu('.menu__btn', '.menu__list');
+dropDownMenu('.filter__title', '.filter__title-list');
+
 
 $(function () {
     $(".rate-star").rateYo({
@@ -7,14 +23,53 @@ $(function () {
     });
     $('.slider__info').slick({
         prevArrow: '<button class="slick-arrow slick-prev"><span class="lnr lnr-chevron-left"></span></button>',
-        nextArrow: '<button class="slick-arrow slick-next"><span class="lnr lnr-chevron-right"></span></button>'
+        nextArrow: '<button class="slick-arrow slick-next"><span class="lnr lnr-chevron-right"></span></button>',
+        responsive: [{
+            breakpoint: 1100,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+            }
+        },
+    ]
     });
     $('.follow__info-item').slick({
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 3,
         prevArrow: '<button class="slick-arrow slick-prev follow__slick-prev"><span class="lnr lnr-chevron-left"></span></button>',
-        nextArrow: '<button class="slick-arrow slick-next follow__slick-next"><span class="lnr lnr-chevron-right"></span></button>'
+        nextArrow: '<button class="slick-arrow slick-next follow__slick-next"><span class="lnr lnr-chevron-right"></span></button>',
+        responsive: [{
+                breakpoint: 1140,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    infinite: true,
+                    dots: false
+                }
+            },
+            {
+                breakpoint: 830,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
+                }
+            },
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true,
+                    arrows: false
+                }
+            },
+        ]
     });
     $(".js-range-slider").ionRangeSlider({
         type: "double",
@@ -61,6 +116,13 @@ const btns = document.querySelectorAll('.btn-box'),
     btnVerification = document.querySelector('.login__restore'),
     verificationContent = document.querySelector('.verification');
 
+btns.forEach(item => {
+    item.addEventListener('click', () => {
+        btnsContent.forEach(i => {
+            i.classList.toggle('active-menu');
+        });
+    });
+});
 
 btnCreateAccount.addEventListener('click', (event) => {
     event.preventDefault();
@@ -92,22 +154,8 @@ btnVerification.addEventListener('click', (event) => {
         verificationContent.classList.remove('hide');
     }
     event.target.reset();
-})
-
-function dropDownMenu(btn, list) {
-    $(btn).click(function () {
-        $(list).slideToggle();
-    });
-}
-
-
-btns.forEach(item => {
-    item.addEventListener('click', () => {
-        btnsContent.forEach(i => {
-            i.classList.toggle('active-menu');
-        });
-    });
 });
+
 
 
 function changeBtn() {
@@ -123,12 +171,3 @@ function changeBtn() {
     });
 }
 changeBtn();
-
-
-dropDownMenu('.dropdown-home', '.dropdown__menu-home');
-dropDownMenu('.dropdown-product', '.dropdown__menu-product');
-dropDownMenu('.dropdown-wordpres', '.dropdown__menu-wordpress');
-dropDownMenu('.dropdown__btn-pages', '.dropdown__item-box_pages');
-dropDownMenu('.dropdown__btn-dashboard', '.dropdown__item-box_dashboard');
-dropDownMenu('.dropdown__btn-others', '.dropdown__item-box_others');
-dropDownMenu('.favourites-page__dropdown', '.favourites-page__list');

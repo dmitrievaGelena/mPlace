@@ -199,11 +199,33 @@ body {
         }
     }
 }
-.purple{
+
+.purple {
     background-color: #7347c1;
 }
-.blue{
+
+.blue {
     background-color: $blue;
+}
+
+.header__btn {
+    padding: 20px 10px;
+    width: 140px;
+    outline: none;
+    font-weight: 500;
+    text-align: center;
+    background-color: $blue;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    color: #fff;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+button{
+    border: none;
 }
 
 //заанимировать всплывающий список filter__title-list
