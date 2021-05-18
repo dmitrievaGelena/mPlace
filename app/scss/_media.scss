@@ -144,18 +144,66 @@
     .product__item {
         flex-basis: calc(50% - 30px);
     }
-    .feedback{
-        &__inner{
-            &-info{
+
+    .feedback {
+        &__inner {
+            &-info {
                 display: block;
             }
         }
-        &__item{
+
+        &__item {
             max-width: 100%;
-            & + .feedback__item{
+
+            &+.feedback__item {
                 margin-top: 30px;
             }
         }
+    }
+
+    .product-page__inner {
+        display: block;
+    }
+
+    .product-page__aside {
+        width: 100%;
+    }
+
+    .aside__title {
+        margin-bottom: 20px;
+    }
+
+    .category__list {
+        li {
+            padding: 10px 20px;
+
+            &+li {
+                border-top: 1px solid #e7ebee;
+            }
+        }
+    }
+
+    .pricing-range__btn {
+        width: 100%;
+    }
+    .contacts__inner-box{
+        display: block;
+        .contacts__item{
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+    .contacts__form-box{
+        padding: 0 15px;
+        form{
+            display: block;
+            input{
+                width: 100%;
+            }
+        }
+    }
+    .contacts__form-text{
+        padding: 0 15px;
     }
 }
 
@@ -176,6 +224,7 @@
             }
         }
     }
+
 }
 
 @media (max-width: 1100px) {
@@ -250,23 +299,45 @@
     .get-box {
         padding: 90px 20px;
     }
-    .news-product__item{
+
+    .news-product__item {
         margin-bottom: 30px;
         flex-basis: calc(100% - 0px);
     }
-    .product__item-box{
+
+    .product__item-box {
         min-height: auto;
     }
-    .news__item-icon{
+
+    .news__item-icon {
         display: block;
-        .news__item-block{
+
+        .news__item-block {
             width: 100%;
         }
-        .news__item-loock{
+
+        .news__item-loock {
             border-left: none;
             padding-left: 0px;
             margin-top: 20px;
         }
+    }
+
+    .product-page__items {
+        .product__item {
+            flex-basis: calc(50% - 30px);
+
+            &.list {
+                .product__items-info {
+                    max-width: 300px;
+                }
+            }
+        }
+    }
+    .pagination__list{
+        position: inherit;
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -278,6 +349,34 @@
             width: 100%;
             padding: 60px 20px;
         }
+    }
+
+    .search {
+        margin-bottom: 0px;
+    }
+
+    .filter__content {
+        display: block;
+        height: auto;
+        padding: 20px 0;
+
+        &-btns {
+            margin-bottom: 30px;
+        }
+
+        &-box {
+            display: block;
+        }
+
+        &-price,
+        &-page {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+
+    .filter__content-swithes {
+        display: none;
     }
 }
 
@@ -334,15 +433,18 @@
     .search__inner-text {
         margin-bottom: 40px;
     }
-    .guarantee{
-        &__inner{
-            &-content{
+
+    .guarantee {
+        &__inner {
+            &-content {
                 display: block;
             }
         }
-        &__item{
+
+        &__item {
             width: 100%;
-            &-money{
+
+            &-money {
                 border-right: none;
                 border-bottom: 1px solid #e8eaf3;
             }
@@ -400,6 +502,16 @@
 
     .features__item {
         flex-basis: calc(100% - 30px);
+    }
+
+    .product-page__items {
+        .product__item {
+            flex-basis: calc(100% - 30px);
+        }
+
+        .slider__item-program {
+            display: none;
+        }
     }
 }
 
@@ -537,6 +649,16 @@
 
         .benefits__item-icon {
             margin-bottom: 25px;
+        }
+    }
+
+    .search__inner {
+        .footer_form {
+            display: none;
+        }
+
+        .breadcrumbs__inner {
+            padding-top: 0;
         }
     }
 }
@@ -712,19 +834,37 @@
         font-size: 25px;
         margin-bottom: 30px;
     }
-    .feedback__link{
+
+    .feedback__link {
         width: 100%;
     }
-    .feedback{
-        .lnr-bubble{
-            &::before{
+
+    .feedback {
+        .lnr-bubble {
+            &::before {
                 font-size: 40px;
             }
         }
-        &__item{
+
+        &__item {
             height: auto;
         }
-    } 
+    }
+    .error__inner{
+        padding: 0 0 50px;
+    }
+    .error__inner-btn{
+        width: 100%;
+    }
+    .error__inner-img{
+        img{
+            width: 100%;
+        }
+    }
+    .error__inner-title{
+        font-size: 20px;
+        line-height: 40px;
+    }
 }
 
 @media(max-width: 530px) {
@@ -756,6 +896,18 @@
     .slider__item-tags {
         padding-bottom: 25px;
     }
+
+    .page-search {
+        .search__inner-text {
+            font-size: 20px;
+            line-height: 35px;
+        }
+
+        .search__inner-info {
+            min-height: auto;
+            padding: 50px 0 30px;
+        }
+    }
 }
 
 @media(max-width: 490px) {
@@ -778,24 +930,45 @@
     .get-box {
         padding: 40px 20px;
     }
-    .feedback{
-        .lnr-bubble{
-            &::before{
+
+    .feedback {
+        .lnr-bubble {
+            &::before {
                 display: none;
             }
         }
-        .profile__user{
+
+        .profile__user {
             display: block;
-            &-personal{
+
+            &-personal {
                 margin-top: 20px;
             }
         }
     }
+
     .ready__inner-link {
         width: 100%;
     }
-    .ready__inner-title{
+
+    .ready__inner-title {
         font-size: 30px;
+    }
+
+    .filter__content-btns {
+        display: block;
+
+        a {
+            width: 100%;
+
+            &+a {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+        }
+    }
+    .pagination__list{
+        display: none;
     }
 }
 
@@ -912,7 +1085,7 @@
     }
 
     .search {
-        margin-bottom: 100px;
+        margin-bottom: 0px;
     }
 
     .search__inner-form {
@@ -1021,8 +1194,12 @@
     .products__inner-content {
         padding: 60px 0;
     }
-    .get-box{
+
+    .get-box {
         height: auto;
+    }
+    .conditioans__inner-title{
+        font-size: 20px;
     }
 }
 

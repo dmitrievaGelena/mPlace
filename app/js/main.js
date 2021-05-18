@@ -98,6 +98,8 @@ $(function () {
         $(".tab_item").hide().eq($(this).index()).fadeIn();
     }).eq(0).addClass("active-tab");
 
+    
+
     var mixer = mixitup('.products__info-box');
 
 });
