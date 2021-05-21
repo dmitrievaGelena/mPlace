@@ -13,9 +13,12 @@ dropDownMenu('.dropdown__btn-others', '.dropdown__item-box_others');
 dropDownMenu('.favourites-page__dropdown', '.favourites-page__list');
 dropDownMenu('.menu__btn', '.menu__list');
 dropDownMenu('.filter__title', '.filter__title-list');
+dropDownMenu('.filter__content__dropdown-price', '.filter__price-list');
+dropDownMenu('.filter__content__dropdown-page', '.filter__page-list');
 
 
 $(function () {
+    $('select').styler();
     $(".rate-star").rateYo({
         rating: 4.2,
         starWidth: "15px",
@@ -98,7 +101,6 @@ $(function () {
         $(".tab_item").hide().eq($(this).index()).fadeIn();
     }).eq(0).addClass("active-tab");
 
-    
 
     var mixer = mixitup('.products__info-box');
 
